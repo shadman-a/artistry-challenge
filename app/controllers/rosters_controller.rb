@@ -2,7 +2,7 @@ class RostersController < ApplicationController
 
     def create
         @roster = Roster.create(roster_params)
-        redirect_to artist_path
+        redirect_to artist_path(@roster.artist)
     end
 
     def new
