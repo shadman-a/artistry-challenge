@@ -1,0 +1,11 @@
+<h1>Pick an Instrument</h1>
+
+<%= form_for(@roster) do |f| %>
+<%= f.label :artist_id, "Pick an Artist" %>
+<%= f.collection_select :artist_id, @artists, :id, :name %>
+<%= f.label :instrument_id, "Pick Your Instrument" %>
+<%= f.collection_select :instrument_id, @instruments, :id, :name %>
+
+<%= f.submit "Submit" %>
+
+<% end %>
