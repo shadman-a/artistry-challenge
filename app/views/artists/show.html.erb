@@ -7,3 +7,5 @@
 <% @artist.instruments.each do |instrument| %>
 <h3><li><%= instrument.name %></li><h3>
 <% end %>
+
+<%=button_to "Back to All Artists", artists_path, method: :get  %>

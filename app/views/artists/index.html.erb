@@ -4,3 +4,6 @@
 <li><%= link_to artist.name, artist_path(artist) %></li>
 </h3>
 <% end %>
+
+<%=button_to "Add Artist", new_artist_path, method: :get  %> <br>
+<%= button_to "Make Connection", new_roster_path, method: :get%>
